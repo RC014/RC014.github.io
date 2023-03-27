@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="utf-8" />
+    <title>Pagina principală</title>
+    <script>
+        window.transitionToPage = function (href) {
+            document.querySelector('body').style.opacity = 0
+            setTimeout(function () {
+                window.location.href = href
+            }, 500)
+        }
+
+        document.addEventListener('DOMContentLoaded', function (event) {
+            document.querySelector('body').style.opacity = 1
+        })
+    </script>
+    <style>
+        body {
+            margin: 0;
+            background-image: url("https://wallpapercave.com/wp/wp9267865.jpg");
+            font-family: inherit;
+            color: whitesmoke;
+            transition: opacity .25s;
+            animation: fadeIn 0.25s linear 1;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        p {
+            background-color: rgba(45,45,45,0.4);
+            text-align: center;
+        }
+        div {
+            color: whitesmoke;
+            font-size: 1.5em;
+        }
+        #btn {
+            background-color: rgba(0,0,0,0);
+            border: 0px;
+        }
+        img {
+            width: 10vw;
+            transition: .3s ease-in;
+        }
+        img:hover{
+            -webkit-filter: drop-shadow(0px 0px 5px #c6c6c6);
+            filter: drop-shadow(0px 0px 5px #c6c6c6);
+        }
+    </style>
+</head>
+
+<body>
+    <p style="font-size: 2.5em;">Proiect la tema: Observatoare astrologice</p>
+    <p style="font-size: 1.5em; line-height:1.2em;">
+        Efectuat de: Mândrescu Ștefan
+        <br />
+        Elevul clasei a XII-a "C"
+        <br />
+        Instituția Publică Liceul Teoretic "Mihai Eminescu"
+        <br />
+        Profesor: Bețișor Rodica
+    </p>
+    <p style="font-size: 1.5em; padding-left: 15vw; padding-right: 15vw; line-height: 1.2em; ">
+        Obiective:
+        <br />
+        1) Structurarea și sistematizarea informației de bază privind observatoarele astronomice.
+        <br />
+        2) Familiarizarea elevilor cu astronomia, în particular cu sistemele de observare a boltei cerești, construcția și poziția pe mapamond a celor mai importante dintere ele.
+    </p>
+    <div style="text-align: center; margin-top:18vh;">
+        <span id="btn" type="button" onclick="transitionToPage('models/menu.html')" style="margin-right:2vw;" title="Spre modele"><img src="obs6.svg" /></span>
+        <span id="btn" type="button" onclick="transitionToPage('map/map.html')" title="Spre glob"> <img src="globe3.svg" /></span>
+    </div>
+</body>
+</html>

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="utf-8" />
+    <title>Meniu</title>
+    <script>
+        window.transitionToPage = function (href) {
+            document.querySelector('body').style.opacity = 0
+            setTimeout(function () {
+                window.location.href = href
+            }, 500)
+        }
+
+        document.addEventListener('DOMContentLoaded', function (event) {
+            document.querySelector('body').style.opacity = 1
+        })
+    </script>
+    <style>
+        body {
+            margin: 0;
+            background-image: url("https://wallpapercave.com/wp/wp9267865.jpg");
+            transition: opacity .25s;
+            animation: fadeIn 0.25s linear 1;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+            .topnav a {
+                float: left;
+                display: block;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+            }
+
+        .active {
+            background-color: #04AA6D;
+            color: white;
+        }
+
+        .topnav .icon {
+            display: none;
+        }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+            .dropdown .dropbtn {
+                font-size: 17px;
+                border: none;
+                outline: none;
+                color: white;
+                padding: 14px 16px;
+                background-color: inherit;
+                font-family: inherit;
+                margin: 0;
+            }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+            .dropdown-content a {
+                float: none;
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+            }
+
+        .topnav a:hover, .dropdown:hover .dropbtn {
+            background-color: #555;
+            color: white;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        @media screen and (max-width: 600px) {
+            .topnav a:not(:first-child), .dropdown .dropbtn {
+                display: none;
+            }
+
+            .topnav a.icon {
+                float: right;
+                display: block;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .topnav.responsive {
+                position: relative;
+            }
+
+                .topnav.responsive .icon {
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                }
+
+                .topnav.responsive a {
+                    float: none;
+                    display: block;
+                    text-align: left;
+                }
+
+                .topnav.responsive .dropdown {
+                    float: none;
+                }
+
+                .topnav.responsive .dropdown-content {
+                    position: relative;
+                }
+
+                .topnav.responsive .dropdown .dropbtn {
+                    display: block;
+                    width: 100%;
+                    text-align: left;
+                }
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 10vmin;
+            overflow: hidden;
+            transform: skew(5deg);
+        }
+
+            .container .card {
+                flex: 1;
+                transition: all 1s ease-in-out;
+                height: 75vmin;
+                position: relative;
+            }
+
+                .container .card .card__head {
+                    color: black;
+                    background: rgba(63, 255, 229, 0.75);
+                    padding: 0.5em;
+                    transform: rotate(-90deg);
+                    transform-origin: 0% 0%;
+                    transition: all 0.5s ease-in-out;
+                    min-width: 100%;
+                    text-align: center;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    font-size: 1em;
+                    white-space: nowrap;
+                }
+
+                .container .card .button {
+                    background-color: rgba(0, 0, 0, 0);
+                    border: none;
+                    color: rgba(0, 0, 0, 0);
+                    transform: rotate(-90deg);
+                    padding: 0.5em;
+                    transform-origin: 0% 0%;
+                    transition: all 0.5s ease-in-out;
+                    min-width: 103%;
+                    min-height: 100%;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                }
+
+                .container .card:hover {
+                    flex-grow: 10;
+                }
+
+                    .container .card:hover img {
+                        filter: grayscale(0);
+                    }
+
+                    .container .card:hover .card__head {
+                        text-align: center;
+                        top: calc(100% - 2em);
+                        color: white;
+                        background: rgba(0, 0, 0, 0.5);
+                        font-size: 2em;
+                        transform: rotate(0deg) skew(-5deg);
+                    }
+
+                    .container .card:hover .button {
+                        text-align: center;
+                        color: rgba(0, 0, 0, 0);
+                        background: rgba(0, 0, 0, 0);
+                        transform: rotate(0deg) skew(-5deg);
+                    }
+
+                .container .card img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    transition: all 1s ease-in-out;
+                    filter: grayscale(100%);
+                }
+
+                .container .card:not(:nth-child(5)) {
+                    margin-right: 1em;
+                }
+    </style>
+</head>
+
+<body>
+    <div class="topnav" id="myTopnav">
+        <div class="dropdown">
+            <button class="dropbtn">
+                Meniu
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="../index.html">Acasă</a>
+                <a href="../map/map.html">Spre glob</a>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="card">
+            <img src="8542547247_fbe483cfb7_b.jpg">
+            <div class="card__head">El Caracol</div>
+            <form>
+                <span class="container card button" onclick="transitionToPage('caracol.html')"></span>
+            </form>
+        </div>
+        <div class="card">
+            <img src="yerkes_t.jpg">
+            <div class="card__head">Observatorul Yerkes</div>
+            <form>
+                <span class="container card button" onclick="transitionToPage('ogs.html')"></span>
+            </form>
+        </div>
+        <div class="card">
+            <img src="20years.jpg">
+            <div class="card__head">Observatorul razelor X Chandra</div>
+            <form>
+                <span class="container card button" onclick="transitionToPage('chandra.html')"></span>
+            </form>
+        </div>
+        <div class="card">
+            <img src="James-Webb-Space-Telescope-image-credit-European-Space-Agency-ESA-posted-on-SpaceFlight-Insider.jpg">
+            <div class="card__head">Telescopul James Webb</div>
+            <form>
+                <span class="container card button" onclick="transitionToPage('webb.html')"></span>
+            </form>
+        </div>
+        <div class="card">
+            <img src="i18vla-2b-ac.jpg">
+            <div class="card__head">The Very Large Array Radio Telescope (VLA)</div>
+            <form>
+                <span class="container card button" onclick="transitionToPage('alma.html')"></span>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

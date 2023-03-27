@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+    <title>Wolter</title>
+    <script>
+        window.transitionToPage = function (href) {
+            document.querySelector('body').style.opacity = 0
+            setTimeout(function () {
+                window.location.href = href
+            }, 500)
+        }
+
+        document.addEventListener('DOMContentLoaded', function (event) {
+            document.querySelector('body').style.opacity = 1
+        })
+    </script>
+    <style>
+        body {
+            margin: 0;
+            background-image: url("https://wallpapercave.com/wp/wp9267865.jpg");
+            transition: opacity .4s;
+            animation: fadeIn 0.4s linear 1;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        span {
+            float: right
+        }
+        span:hover{
+            cursor:pointer;
+        }
+    </style>
+</head>
+<body>
+    <span onclick="transitionToPage('chandra.html')" ><img src="x.svg" style="max-width:2em;padding-top:20px;padding-right:10px;" /></span>
+    <img src="wolter.png" style="max-width:100vw;padding-top:22vh;" />
+</body>
