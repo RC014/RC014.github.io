@@ -135,7 +135,7 @@ function main() {
             const boxSize = box.getSize(new THREE.Vector3()).length();
             const boxCenter = box.getCenter(new THREE.Vector3());
 
-            frameArea(boxSize * 0.6, boxSize, boxCenter, camera);
+            frameArea(boxSize * 0.8, boxSize, boxCenter, camera);
 
             controls.maxDistance = boxSize * 10;
             controls.target.copy(boxCenter);
