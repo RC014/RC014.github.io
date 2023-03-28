@@ -67,11 +67,70 @@ function main() {
 
     {
         const gltfLoader = new GLTFLoader();
-        gltfLoader.load('ogs.gltf', (gltf) => {
-            const root = gltf.scene;
-            scene.add(root);
+        gltfLoader.load('ogs7.gltf', (gltf) => {
+            const a = gltf.scene;
 
-            const box = new THREE.Box3().setFromObject(root);
+            {
+                const gltfLoader = new GLTFLoader();
+                gltfLoader.load('ogs2.gltf', (gltf) => {
+                    const b = gltf.scene;
+                    a.add(b);
+                });
+            }
+
+            {
+                const gltfLoader = new GLTFLoader();
+                gltfLoader.load('ogs3.gltf', (gltf) => {
+                    const c = gltf.scene;
+                    a.add(c);
+                });
+            }
+
+            {
+                const gltfLoader = new GLTFLoader();
+                gltfLoader.load('ogs4.gltf', (gltf) => {
+                    const c = gltf.scene;
+                    a.add(c);
+                });
+            }
+            {
+                const gltfLoader = new GLTFLoader();
+                gltfLoader.load('ogs5.gltf', (gltf) => {
+                    const c = gltf.scene;
+                    a.add(c);
+                });
+            }
+            {
+                const gltfLoader = new GLTFLoader();
+                gltfLoader.load('ogs6.gltf', (gltf) => {
+                    const c = gltf.scene;
+                    a.add(c);
+                });
+            }
+            {
+                const gltfLoader = new GLTFLoader();
+                gltfLoader.load('ogs7.gltf', (gltf) => {
+                    const c = gltf.scene;
+                    a.add(c);
+                });
+            }
+            {
+                const gltfLoader = new GLTFLoader();
+                gltfLoader.load('ogs1.gltf', (gltf) => {
+                    const c = gltf.scene;
+                    a.add(c);
+                });
+            }
+                        {
+                const gltfLoader = new GLTFLoader();
+                gltfLoader.load('ogs8.gltf', (gltf) => {
+                    const c = gltf.scene;
+                    a.add(c);
+                });
+            }
+            scene.add(a);
+
+            const box = new THREE.Box3().setFromObject(a);
 
             const boxSize = box.getSize(new THREE.Vector3()).length();
             const boxCenter = box.getCenter(new THREE.Vector3());
