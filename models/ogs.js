@@ -69,6 +69,13 @@ function main() {
         const gltfLoader = new GLTFLoader();
         gltfLoader.load('ogs7.gltf', (gltf) => {
             const a = gltf.scene;
+            {
+                const gltfLoader = new GLTFLoader();
+                gltfLoader.load('ogs1.gltf', (gltf) => {
+                    const c = gltf.scene;
+                    a.add(c);
+                });
+            }
 
             {
                 const gltfLoader = new GLTFLoader();
@@ -116,13 +123,6 @@ function main() {
             }
             {
                 const gltfLoader = new GLTFLoader();
-                gltfLoader.load('ogs1.gltf', (gltf) => {
-                    const c = gltf.scene;
-                    a.add(c);
-                });
-            }
-                        {
-                const gltfLoader = new GLTFLoader();
                 gltfLoader.load('ogs8.gltf', (gltf) => {
                     const c = gltf.scene;
                     a.add(c);
@@ -135,7 +135,7 @@ function main() {
             const boxSize = box.getSize(new THREE.Vector3()).length();
             const boxCenter = box.getCenter(new THREE.Vector3());
 
-            frameArea(boxSize * 0.8, boxSize, boxCenter, camera);
+            frameArea(boxSize * 1, boxSize, boxCenter, camera);
 
             controls.maxDistance = boxSize * 10;
             controls.target.copy(boxCenter);
