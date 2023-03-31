@@ -15,6 +15,14 @@
             document.querySelector('body').style.opacity = 1
         })
     </script>
+    <script>
+        const el = document.querySelector("#module");
+
+        el.addEventListener("mousemove", (e) => {
+            el.style.backgroundPositionX = -e.offsetX + "px";
+            el.style.backgroundPositionY = -e.offsetY + "px";
+        });
+    </script>
     <style>
         body {
             margin: 0;
@@ -34,14 +42,12 @@
                 opacity: 1;
             }
         }
-
-        p {
-            background-color: rgba(45,45,45,0.4);
-            text-align: center;
-        }
-        div {
+        .txt {
+            background: linear-gradient(to right,transparent, rgba(45,45,45,0.4), rgba(45,45,45,0.4), transparent);
             color: whitesmoke;
-            font-size: 1.5em;
+            padding-top: 0px;
+            text-align: center;
+            margin-top: 5vh;
         }
         #btn {
             background-color: rgba(0,0,0,0);
@@ -57,27 +63,28 @@
         }
     </style>
 </head>
-
 <body>
-    <p style="font-size: 2.5em;">Proiect la tema: Observatoare astrologice</p>
-    <p style="font-size: 1.5em; line-height:1.2em;">
-        Efectuat de: Mândrescu Ștefan
-        <br />
-        Elevul clasei a XII-a "C"
-        <br />
-        Instituția Publică Liceul Teoretic "Mihai Eminescu"
-        <br />
-        Profesor: Bețișor Rodica
-    </p>
-    <p style="font-size: 1.5em; padding-left: 15vw; padding-right: 15vw; line-height: 1.2em; ">
-        Obiective:
-        <br />
-        1) Structurarea și sistematizarea informației de bază privind observatoarele astronomice.
-        <br />
-        2) Înțelegerea științifică a astronomiei, studierea instrumentelor și echipamentelor astronomice.
-        <br />
-        3) Promovarea interesului pentru știință, în particular pentru astronomie.
-    </p>
+    <div class="txt">
+        <h1 style="font-weight: 200;">Proiect la tema: Observatoare astrologice</h1>
+        <h2 style="line-height:1.2em;font-weight: 100;">
+            Efectuat de: Mândrescu Ștefan
+            <br />
+            Elevul clasei a XII-a "C"
+            <br />
+            Instituția Publică Liceul Teoretic "Mihai Eminescu"
+            <br />
+            Profesor: Bețișor Rodica
+        </h2>
+        <h2 style="line-height: 1.2em; font-weight: 100;">
+            Obiective:
+            <br />
+            1) Structurarea și sistematizarea informației de bază privind observatoarele astronomice.
+            <br />
+            2) Înțelegerea științifică a astronomiei, studierea instrumentelor și echipamentelor astronomice.
+            <br />
+            3) Promovarea interesului pentru știință, în particular pentru astronomie.
+        </h2>
+    </div>
     <div style="text-align: center; margin-top:18vh;">
         <span id="btn" type="button" onclick="transitionToPage('models/menu.html')" style="margin-right:2vw;" title="Spre modele"><img src="obs6.svg" /></span>
         <span id="btn" type="button" onclick="transitionToPage('map/map.html')" title="Spre glob"> <img src="globe3.svg" /></span>
