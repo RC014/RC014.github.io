@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <title>Pagina principală</title>
+    <link rel="icon" href="sign3.png" type="image/x-icon">
     <script>
         window.transitionToPage = function (href) {
             document.querySelector('body').style.opacity = 0
@@ -42,6 +43,7 @@
                 opacity: 1;
             }
         }
+
         .txt {
             background: linear-gradient(to right,transparent, rgba(45,45,45,0.4), rgba(45,45,45,0.4), transparent);
             color: whitesmoke;
@@ -49,18 +51,21 @@
             text-align: center;
             margin-top: 5vh;
         }
+
         #btn {
             background-color: rgba(0,0,0,0);
             border: 0px;
         }
+
         img {
             width: 10vw;
             transition: .3s ease-in;
         }
-        img:hover{
-            -webkit-filter: drop-shadow(0px 0px 5px #c6c6c6);
-            filter: drop-shadow(0px 0px 5px #c6c6c6);
-        }
+
+            img:hover {
+                -webkit-filter: drop-shadow(0px 0px 5px #c6c6c6);
+                filter: drop-shadow(0px 0px 5px #c6c6c6);
+            }
     </style>
 </head>
 <body>
