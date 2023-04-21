@@ -8,7 +8,7 @@
         "type": "Telescop optic/infraroșu",
         "location": "Situat la periferia deșertului chilian Atacama, la 600 km nord de Santiago de Chile și la o altitudine de 2400 de metri.",
         "facts": "La Silla a fost un bastion ESO din anii 1960. Aici, ESO operează două dintre cele mai productive telescoape de 4 metri din lume. Telescopul New Technology Telescope (NTT) de 3,58 metri a deschis un nou teren pentru ingineria și proiectarea telescopului și a fost primul din lume care a avut o oglindă principală controlată de computer (optică activă), tehnologie dezvoltată la ESO și aplicată acum la majoritatea telescopurilor mari și moderne din lume. Oglinda principală este flexibilă și forma ei este reglată activ de către actuatori în timpul observațiilor, folosind o stea de referință, pentru a păstra calitatea optimă a imaginii. Poziția oglinzii secundare este, de asemenea, controlată activ în trei direcții.",
-        "imageUrl": "https://www.eso.org/public/archives/static/teles-instr/lasilla/images/lasilla.jpg",
+        "imageUrl": "https://rc014.github.io/map/img/lasilla.jpg",
         "imageCaption": "Observatorul La Silla",
         "source": "Pagina web al Observatorului European de Sud (ESO)",
         "sourceUrl": "https://www.eso.org/public/teles-instr/lasilla/"
@@ -28,7 +28,7 @@
         "type": "Radiotelescop",
         "location": "Câmpiile San Agustin din New Mexico, la nord-vest de Socorro",
         "facts": "VLA este cel mai versatil, cel mai utilizat radiotelescop din lume. Poate mapa structura pe scară largă a norilor de gaz și poate identifica ejecțiile de plasmă din găurile negre supermasive. Este prima cameră color din lume pentru radioastronomie, datorită noii sale suite de receptoare și unui supercomputer care poate procesa simultan câmpuri largi de date spectrale. VLA este, de asemenea, un tracker de nave spațiale de înaltă precizie pe care NASA și ESA l-au folosit pentru a urmări navele spațiale robotizate care explorează Sistemul Solar.",
-        "imageUrl": "https://public.nrao.edu/wp-content/uploads/2017/01/VLAArrayNiteClouds_RGB.jpg",
+        "imageUrl": "https://rc014.github.io/map/img/VLAArrayNiteClouds_RGB.jpg",
         "imageCaption": "Very Large Array (VLA)",
         "source": "Pagina web al proiectului NRAO",
         "sourceUrl": "https://public.nrao.edu/telescopes/vla/"
@@ -48,7 +48,7 @@
         "type": "Telescop optic/infraroșu",
         "location": "Vârful Mauna Kea, Hawaii",
         "facts": "Telescoapele gemene ale observatorului W. M. Keck sunt cele mai productive din punct de vedere științific telescoape optice și infraroșu din lume. Fiecare telescop cântărește 300 de tone și funcționează cu precizie nanometrică. Oglinzile primare ale telescoapelor au un diametru de 10 metri și sunt compuse fiecare din 36 de segmente hexagonale care funcționează împreună ca o singură bucată de sticlă reflectorizantă.",
-        "imageUrl": "https://keckobservatory.org/wp-content/uploads/2017/08/default-bg.jpg",
+        "imageUrl": "https://rc014.github.io/map/img/default-bg.jpg",
         "imageCaption": "Observatorul W. M. Keck",
         "source": "Pagina web al proiectului KECK",
         "sourceUrl": "https://keckobservatory.org/about/keck-observatory/"
@@ -68,7 +68,7 @@
         "type": "Observator",
         "location": "Pe vârful muntelui Palomar din nordul comitatului San Diego, California",
         "facts": "Observatorul găzduiește trei telescoape de cercetare active: telescopul Hale de 200 inchi (5,1 metri), telescopul Samuel Oschin de 48 inchi (1,2 metri) și telescopul de 60 inchi (1,5 metri). Cercetările de la Observatorul Palomar sunt desfășurate de o comunitate largă de astronomi de la Caltech și alte instituții partenere interne și internaționale.",
-        "imageUrl": "https://sites.astro.caltech.edu/palomar/about/images/ObservatoryAerialCover.jpg",
+        "imageUrl": "https://rc014.github.io/map/img/ObservatoryAerialCover.jpg",
         "imageCaption": "Observatorul Palomar",
         "source": "Pagina web al observatorului Palomar",
         "sourceUrl": "https://sites.astro.caltech.edu/palomar/about/"
@@ -88,7 +88,7 @@
         "type": "Telescop cu lungime de undă 365 nm - 25 µm",
         "location": "Insula Canare",
         "facts": "Acest telescop face parte din observatorul Roque de los Muchachos de pe insula La Palma. Și-a început primele observații în 2009 și timp de mulți ani, a fost cel mai mare telescop de acest gen. Obiectivul principal de studiu al GTC este de a observa cerul și de a permite studiului să găsească răspunsuri la întrebările cheie din astrofizică. Studiile de la observator includ cercetarea naturii găurilor negre, formarea și istoria stelelor și galaxiilor și descoperirea planetelor îndepărtate.",
-        "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a8/Grantelescopio.jpg/1280px-Grantelescopio.jpg",
+        "imageUrl": "https://rc014.github.io/map/img/1280px-Grantelescopio.jpg",
         "imageCaption": "Gran Telescopio CANARIAS (GTC)",
         "source": "Pagina web al GRANTECAN S.A.",
         "sourceUrl": "http://www.gtc.iac.es"
@@ -108,7 +108,7 @@
         "type": "Detectorul particulelor neutrino (refectul Cherenkov)",
         "location": "1.000 de metri sub pământ în mina Kamioka, orașul Hida, Gifu, Japonia",
         "facts": "Detectorul Super-Kamiokande constă dintr-un rezervor din oțel inoxidabil, cu diametrul de 39,3 m și înălțime de 41,4 m, umplut cu 50.000 de tone de apă. Pe peretele rezervorului sunt instalate aproximativ 13.000 de fotomultiplicatori. Unul dintre scopurile experimentului Super-Kamiokande este de a dezvălui proprietățile neutrinilor prin observarea neutrinilor solari, a neutrinilor atmosferici și a neutrinilor artificiali. Prima dată oscilația neutrinoilor atmosferici a fost detectată în 1998.",
-        "imageUrl": "https://rc014.github.io/map/utils/kamiokande.jpg",
+        "imageUrl": "https://rc014.github.io/map/img/kamiokande.jpg",
         "imageCaption": "Detectorul Super-Kamiokande",
         "source": "Pagina web al Institutului de Cercetare a Razelor Cosmice, Universitatea din Tokyo",
         "sourceUrl": "https://www-sk.icrr.u-tokyo.ac.jp/en/sk/about/outline/"
@@ -128,7 +128,7 @@
         "type": "Telescop refractor (optic)",
         "location": "Satul Williams Bay, statul Wisconsin, SUA",
         "facts": "Fondat în 1897 de George Ellery Hale, Observatorul Yerkes se autoproclamă „locul de naștere al astrofizicii moderne”. Domul principal al observatorului găzduiește un telescop refractor cu lentilă dublă de 102cm in diametru, cel mai mare refractor folosit vreodată cu succes pentru astronomie. Două cupole mai mici găzduiesc telescoape reflectorizante de 102 cm și 61 cm. Există câteva telescoape mai mici – unele montate permanent – care sunt utilizate în principal în scopuri educaționale. Observatorul deține și o colecție de peste 170.000 de plăci fotografice.",
-        "imageUrl": "https://allthatsinteresting.com/wordpress/wp-content/uploads/2012/09/Yerkes1.jpg",
+        "imageUrl": "https://rc014.github.io/map/img/Yerkes1.jpg",
         "imageCaption": "Cele trei telescoape din cadrul observatorului Yerkes",
         "source": "Pagina web al observatorului Yerkes",
         "sourceUrl": "https://yerkesobservatory.org/learn/governance/"
@@ -148,7 +148,7 @@
         "type": "Telescop optic (SALT)",
         "location": "Africa de Sud",
         "facts": "SALT colectează lumina de la obiectele astronomice și o focalizează cu precizie către unul dintre cele patru puncte de focalizare. De acolo, lumina trece într-un instrument optic, în timp ce telescopul urmărește mișcarea relativă a obiectului pe cer pentru a maximiza timpul de expunere.",
-        "imageUrl": "https://www.salt.ac.za/wp-content/uploads/photo-gallery/imported_from_media_libray/CRW_3821-scaled.jpg?bwg=1591799843",
+        "imageUrl": "https://rc014.github.io/map/img/CRW_3821-scaled.jpg?bwg=1591799843",
         "imageCaption": "The Southern African Large Telescope (SALT)",
         "source": "Pagina web al Observatorul Astronomic din Africa de Sud",
         "sourceUrl": "https://www.saao.ac.za/about/"
@@ -168,7 +168,7 @@
         "type": "Radiotelescop imobil",
         "location": "Zelenchukskaya, Republica Karachay-Cerkess, Rusia",
         "facts": "Telescopul este format dintr-un cerc cu diametrul de 576 m compus din radioreflectoare dreptunghiulare și un set de reflectoare și receptoare secundare. Fiecare dintre cele 895 reflectoare de 2×7,4 m poate fi înclinat pentru a reflecta undele radio de intrare către o oglindă secundară conică centrală sau către unul dintre cei cinci cilindri parabolici. Fiecare reflector secundar este combinat cu o cabină de instrumente care conține diverse receptoare și instrumente. Efectul general este acela al unei antene parțial orientabile cu o putere de rezoluție maximă a unei antene cu diametrul de aproape 600 m, atunci când se utilizează receptorul conic central, făcând radiotelescopul a fi cel mai mare din lume.",
-        "imageUrl": "https://i.ytimg.com/vi/ZwUHUJOFECc/maxresdefault.jpg",
+        "imageUrl": "https://rc014.github.io/map/img/maxresdefault.jpg",
         "imageCaption": "Радиоастрономический Телескоп Академии Наук – 600",
         "source": "Pagina Wikipedia al telescopului RATAN-600",
         "sourceUrl": "https://en.wikipedia.org/wiki/RATAN-600"
@@ -188,7 +188,7 @@
         "type": "Radiotelescop imobil",
         "location": "Depresiounea Dawodang (大窝凼洼地), Județul Pingtang, Guizhou, sud-vestul Chinei",
         "facts": "Are un design nou, folosind o suprafață activă formată din 4.500 de panouri metalice care formează o formă de parabolă în mișcare în timp real. Cabina care conține antena de recepție, suspendată pe cabluri deasupra antenei, se poate mișca automat folosind trolii pentru a direcționa instrumentul și pentru a primi semnale din diferite direcții. Se observă la lungimi de undă de 10 cm până la 4,3 m.",
-        "imageUrl": "https://www.insidehook.com/wp-content/uploads/2018/08/GettyImages-626582398-e1535287890302-1.jpg?fit=1800%2C736",
+        "imageUrl": "https://rc014.github.io/map/img/GettyImages-626582398-e1535287890302-1.jpg",
         "imageCaption": "五百米口径球面射电望远镜 (Tianyan)",
         "source": "Pagina Wikipedia al telescopului FAST",
         "sourceUrl": "https://en.wikipedia.org/wiki/Five-hundred-meter_Aperture_Spherical_Telescope"
