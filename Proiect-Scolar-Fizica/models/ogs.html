@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Yerkes</title>
+    <link rel="icon" href="../sign3.png" type="image/x-icon">
+    <script src="ogs.js" type="module" defer></script>
+    <script>
+        window.transitionToPage = function (href) {
+            document.querySelector('body').style.opacity = 0
+            setTimeout(function () {
+                window.location.href = href
+            }, 500)
+        }
+
+        document.addEventListener('DOMContentLoaded', function (event) {
+            document.querySelector('body').style.opacity = 1
+        })
+    </script>
+    <style>
+        body {
+            margin: 0;
+            background-image: url("https://wallpapercave.com/wp/wp9267865.jpg");
+            transition: opacity .25s;
+            animation: fadeIn 0.25s linear 1;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        canvas {
+            display: inline-block;
+            width: 60%;
+            height: 100%;
+            margin: auto;
+            padding: 0;
+            border: none;
+            overflow-x: hidden;
+            position: fixed;
+            z-index: 1;
+            right: 0;
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+            .topnav span {
+                float: left;
+                display: block;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 17px;
+            }
+
+        .active {
+            background-color: #04AA6D;
+            color: white;
+        }
+
+        .topnav .icon {
+            display: none;
+        }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+            .dropdown .dropbtn {
+                font-size: 17px;
+                border: none;
+                outline: none;
+                color: white;
+                padding: 14px 16px;
+                background-color: inherit;
+                font-family: inherit;
+                margin: 0;
+            }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+            .dropdown-content span {
+                float: none;
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+            }
+
+        .topnav span:hover, .dropdown:hover .dropbtn {
+            background-color: #555;
+            color: white;
+            cursor: pointer;
+        }
+
+        .dropdown-content span:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        @media screen and (max-width: 600px) {
+            .topnav span:not(:first-child), .dropdown .dropbtn {
+                display: none;
+            }
+
+            .topnav span.icon {
+                float: right;
+                display: block;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .topnav.responsive {
+                position: relative;
+            }
+
+                .topnav.responsive .icon {
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                }
+
+                .topnav.responsive span {
+                    float: none;
+                    display: block;
+                    text-align: left;
+                }
+
+                .topnav.responsive .dropdown {
+                    float: none;
+                }
+
+                .topnav.responsive .dropdown-content {
+                    position: relative;
+                }
+
+                .topnav.responsive .dropdown .dropbtn {
+                    display: block;
+                    width: 100%;
+                    text-align: left;
+                }
+        }
+
+        .container {
+            display: flex;
+        }
+
+        #col-1 {
+            flex: 1;
+            max-width: 40vw;
+        }
+
+        #col-2 {
+            flex: 1;
+        }
+
+        .info {
+            background-color: rgba(0, 0, 0, 0.65);
+            color: white;
+        }
+
+        p {
+            font-size: 2.5vh;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="container">
+        <div id="col-1">
+            <div class="topnav" id="myTopnav">
+                <div class="dropdown">
+                    <button class="dropbtn">
+                        Meniu
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <span onclick="transitionToPage('../index_fiz.html')">Acasă</span>
+                        <span onclick="transitionToPage('chandra.html')">Chandra</span>
+                        <span onclick="transitionToPage('webb.html')">Telescopul James Webb</span>
+                        <span onclick="transitionToPage('alma.html')">VLA</span>
+                        <span onclick="transitionToPage('caracol.html')">El Caracol</span>
+                    </div>
+                </div>
+            </div>
+            <div class="info">
+                <p style="text-align: center; line-height: 0em;">Telescop optic</p>
+                <img src="yerkes.jpg" style="width:40vw;" />
+                <p style="text-align: center; font-size: 0.8em; line-height: 0em;">Fotografia galaxiei Messier 51 făcută pe 3 iunie 1902, la Observatorul Yerkes</p>
+                <p>Telescopul optic formează imagini ale cerului relativ apropiate și mărește luminozitatea aparentă a aștrilor, permițând distingerea detaliilor și observarea a mult mai multor stele decât cu ochiul liber. Telescoapele optice sunt împǎrțite în douǎ categorii principale: telescoape reflectoare și telescoape refractoare.</p>
+                <p>Telescoapele de refracție au 2 lentile: una mare, plasată în partea frontală și numită „obiectiv”, care colectează lumina, și una mică în partea posterioară, „ocularul”, care focalizează razele luminoase în ochiul observatorului. Acest tip de telescop a fost utilizat de Galileo Galilei în anul 1609 pentru a privi Luna, pe care a văzut-o de 30 de ori mai aproape decât cu ochiul liber.</p>
+            </div>
+        </div>
+        <div id="col-2">
+            <canvas id="c"></canvas>
+            <script type="importmap">
+                {
+                    "imports": {
+                        "three": "https://threejs.org/build/three.module.js",
+                        "three/addons/": "https://threejs.org/examples/jsm/"
+                    }
+                }</script><!-- Remove this when import maps will be widely supported -->
+            <script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
+        </div>
+    </section>
+</body>
+</html>
