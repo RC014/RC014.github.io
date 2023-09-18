@@ -1,37 +1,41 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="ro">
 <head>
-    <meta charset="utf-8" />
-    <title>Pagina principală</title>
-    <link rel="icon" href="sign3.png" type="image/x-icon">
-    <script>
-        window.transitionToPage = function (href) {
-            document.querySelector('body').style.opacity = 0
-            setTimeout(function () {
-                window.location.href = href
-            }, 500)
-        }
-
-        document.addEventListener('DOMContentLoaded', function (event) {
-            document.querySelector('body').style.opacity = 1
-        })
-    </script>
-    <script>
-        const el = document.querySelector("#module");
-
-        el.addEventListener("mousemove", (e) => {
-            el.style.backgroundPositionX = -e.offsetX + "px";
-            el.style.backgroundPositionY = -e.offsetY + "px";
-        });
-    </script>
     <style>
+        @font-face {
+            font-family: 'Chicago';
+            src: url('https://assets.website-files.com/5bac0565754dd6b3e278aeb2/5bac0565754dd6154478af16_ChicagoFLF.woff2') format('woff2'), url('https://assets.website-files.com/5bac0565754dd6b3e278aeb2/5bac0565754dd6490778af13_ChicagoFLF.eot') format('embedded-opentype'), url('https://assets.website-files.com/5bac0565754dd6b3e278aeb2/5bac0565754dd64da778af15_ChicagoFLF.woff') format('woff'), url('https://assets.website-files.com/5bac0565754dd6b3e278aeb2/5bac0565754dd6112078af12_ChicagoFLF.ttf') format('truetype'), url('https://assets.website-files.com/5bac0565754dd6b3e278aeb2/5bac0565754dd66da378af14_ChicagoFLF.svg') format('svg');
+            font-weight: 400;
+            font-style: normal;
+            font-display: auto;
+        }
         body {
+            line-height: 0.8em;
             margin: 0;
-            background-image: url("https://wallpapercave.com/wp/wp9267865.jpg");
-            font-family: inherit;
-            color: whitesmoke;
+            background-image: url("https://assets.website-files.com/5bac0565754dd6b3e278aeb2/5bac0565754dd6780a78af19_deckstop-background.svg");
+            background-position: 0px 0px;
+            background-size: 2px 2px;
+            background-repeat: repeat;
             transition: opacity .25s;
             animation: fadeIn 0.25s linear 1;
+            border-radius: 25px;
+            overflow: hidden;
+            display: block;
+            box-sizing: border-box;
+            width: 98%;
+            height: 97%;
+            margin: 1%;
+            padding: 0;
+        }
+
+        html {
+            background-color: #222222;
+            overflow: hidden;
+            display: block;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
         }
 
         @keyframes fadeIn {
@@ -44,55 +48,184 @@
             }
         }
 
-        .txt {
-            background: linear-gradient(to right,transparent, rgba(45,45,45,0.56), rgba(45,45,45,0.56), transparent);
-            color: whitesmoke;
-            padding-top: 0px;
-            text-align: center;
-            margin-top: 5vh;
+        .topnav {
+            overflow: hidden;
+            background-color: #fff;
+            border-bottom: solid #222222;
+            border-width: thick;
+            overflow: hidden;
+            font-family: Chicago, Verdana, sans-serif;
         }
 
-        #btn {
-            background-color: rgba(0,0,0,0);
-            border: 0px;
-        }
-
-        img {
-            width: 10vw;
-            transition: .3s ease-in;
-        }
-
-            img:hover {
-                -webkit-filter: drop-shadow(0px 0px 5px #c6c6c6);
-                filter: drop-shadow(0px 0px 5px #c6c6c6);
+            .topnav a {
+                float: left;
+                display: block;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 32px;
+                line-height: 0.8em;
             }
+
+        .active {
+            background-color: #04AA6D;
+            color: #fff;
+        }
+
+        .topnav .icon {
+            display: none;
+        }
+
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+
+            .dropdown .dropbtn {
+                font-size: 32px;
+                line-height: 0.8em;
+                border: none;
+                outline: none;
+                color: #222222;
+                padding: 14px 16px;
+                background-color: inherit;
+                font-family: inherit;
+                margin: 0;
+            }
+            .dropdown .dropsgn {
+                border: none;
+                outline: none;
+                color: #222222;
+                padding: 10px 16px;
+                background-color: inherit;
+                font-family: inherit;
+                margin: 0;
+            }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            border: solid #222222;
+            border-width: thick;
+            overflow: hidden;
+        }
+
+            .dropdown-content a {
+                float: none;
+                color: #222222;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+                text-align: left;
+            }
+
+        .topnav a:hover, .dropdown:hover .dropbtn {
+            background-color: #222222;
+            color: white;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #222222;
+            color: white;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        @media screen and (max-width: 600px) {
+            .topnav a:not(:first-child), .dropdown .dropbtn {
+                display: none;
+            }
+
+            .topnav a.icon {
+                float: right;
+                display: block;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            .topnav.responsive {
+                position: relative;
+            }
+
+                .topnav.responsive .icon {
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                }
+
+                .topnav.responsive a {
+                    float: none;
+                    display: block;
+                    text-align: left;
+                }
+
+                .topnav.responsive .dropdown {
+                    float: none;
+                }
+
+                .topnav.responsive .dropdown-content {
+                    position: relative;
+                }
+
+                .topnav.responsive .dropdown .dropbtn {
+                    display: block;
+                    width: 100%;
+                    text-align: left;
+                }
+        }
+        .classic-menu_divider-wrap {
+            position: relative;
+            z-index: 1;
+            padding-top: 11px;
+            padding-bottom: 11px;
+            -webkit-align-self: stretch;
+            -ms-flex-item-align: stretch;
+            -ms-grid-row-align: stretch;
+            align-self: stretch;
+            background-color: #fff;
+        }
+
+        .classic-menu_divider {
+            border-top: 2px dotted #000;
+        }
     </style>
 </head>
 <body>
-    <div class="txt">
-        <h1 style="font-weight: 200;">Proiect la tema: Observatoare astrologice</h1>
-        <h2 style="line-height:1.2em;font-weight: 100;">
-            Efectuat de: Mândrescu Ștefan
-            <br />
-            Elevul clasei a XII-a "C"
-            <br />
-            Instituția Publică Liceul Teoretic "Mihai Eminescu"
-            <br />
-            Profesor: Bețișor Rodica
-        </h2>
-        <h2 style="line-height: 1.2em; font-weight: 100;">
-            Obiective:
-            <br />
-            1) Structurarea și sistematizarea informației de bază privind observatoarele astronomice.
-            <br />
-            2) Înțelegerea științifică a astronomiei, studierea instrumentelor și echipamentelor astronomice.
-            <br />
-            3) Promovarea interesului pentru știință, în particular pentru astronomie.
-        </h2>
-    </div>
-    <div style="text-align: center; margin-top:18vh;">
-        <span id="btn" type="button" onclick="transitionToPage('models/menu.html')" style="margin-right:2vw;" title="Spre modele"><img src="obs6.svg" /></span>
-        <span id="btn" type="button" onclick="transitionToPage('map/map.html')" title="Spre glob"> <img src="globe3.svg" /></span>
+    <div class="topnav" id="myTopnav">
+        <div class="dropdown">
+            <button class="dropsgn"><img src="SM.png" width="26" style="image-rendering: pixelated; border: solid black; border-width: 2px; "/></button>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">
+                Proiecte
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="./Proiect-Scolar-Fizica/index_fiz.html">Fizica</a>
+                <div class="classic-menu_divider-wrap"><div class="classic-menu_divider"></div></div>
+                <a href="../map/map.html">Programarea Calculatoarelor</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">
+                Social
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="mailto:%20stefanmandrescu1401@gmail.com">E-mail</a>
+                <a href="https://www.instagram.com/tanukikizato/?next=%2F">Instagram</a>
+                <a href="https://www.linkedin.com/in/ștefan-mândrescu-59590b205/">LinkedIn</a>
+                <a href="https://vk.com/tanuki_kizato">VKontakte</a>
+                <a href="https://www.facebook.com/yukiro.tanuki">Facebook</a>
+            </div>
+        </div>
     </div>
 </body>
 </html>
