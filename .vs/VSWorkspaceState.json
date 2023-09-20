@@ -1,6 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Proiect-Scolar-Fizica",
+    "\\Proiect-Scolar-Fizica\\map",
+    "\\Proiect-Scolar-Fizica\\map\\img",
+    "\\Proiect-Scolar-Fizica\\map\\utils"
   ],
+  "SelectedNode": "\\Proiect-Scolar-Fizica\\map\\utils\\obs-points.geojson",
   "PreviewInSolutionExplorer": false
 }
