@@ -1,8 +1,11 @@
 {
   "ExpandedNodes": [
     "",
-    "\\galerie"
+    "\\galerie",
+    "\\Proiect-Scolar-Fizica",
+    "\\Proiect-Scolar-Fizica\\map",
+    "\\Proiect-Scolar-Fizica\\map\\utils"
   ],
-  "SelectedNode": "\\galerie\\galerie.html",
+  "SelectedNode": "\\galerie\\utm_metro_omni.png",
   "PreviewInSolutionExplorer": false
 }
